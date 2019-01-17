@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TD3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+      body {
+        background-color: #000;
+        margin: 0px;
+        overflow: hidden;
+      }
+
+      #info {
+        position: absolute;
+        top: 0px; width: 100%;
+        color: #ffffff;
+        padding: 5px;
+        font-family: Monospace;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      a {
+        color: #ff0080;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0080ff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script src="../three.js-master/build/three.js"></script>
+    <script src="../three.js-master/examples/js/controls/OrbitControls.js"></script>
+    <script src="../three.js-master/examples/js/libs/dat.gui.min.js"></script>
+    <script src="../three.js-master/examples/js/loaders/ColladaLoader.js"></script>
+    <script src="../three.js-master/examples/js/WebGL.js"></script>
+    <script src="../three.js-master/examples/js/controls/FirstPersonControls.js"></script>
+    <script src="../three.js-master/examples/js/libs/stats.min.js"></script>
+
+    <script src="var.js"></script>
+    <script src="Functions/init.js"></script>
+    <script src="Functions/animate.js"></script>
+    <script src="Functions/gui.js"></script>
+    <script src="Functions/onReSize.js"></script>
+    <script src="Functions/render.js"></script>
+    <script src="Functions/WebGLAvailable.js"></script>
+    <script src="Functions/stats.js"></script>
+
+    <script>
+
+      available();
+      init();
+      buildGui();
+      render();
+
+
+    </script>
+
+  </body>
+
+</html>
